@@ -2,10 +2,19 @@ import React from 'react'
 
 class Movie extends React.Component {
 
+    // State = {
+    //     clicked: false 
+    // }
+
     localClickHandler = () => {
         console.log(this.props.movie)
         this.props.clickHandler(this.props.movie)
     }
+    // synopsisClick = () => {
+    //     this.setState ({ clicked: !this.state.clicked})
+    // }
+    // started on the button to make the synopsis render but ran out of time
+
     render() {
         return(
             <div>
@@ -18,6 +27,6 @@ class Movie extends React.Component {
         )
 
     }
-}
+    }
 
 export default Movie;
